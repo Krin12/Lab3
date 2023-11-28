@@ -28,7 +28,7 @@ int main()
         perror ("mlock failed");
         exit (1);
     }
-    strcpy((char *)shmaddr, "Hello, inan");
+    strcpy((char *)shmaddr, "shm test");
     if (munmap(shmaddr, SHMSIZE) == -1) {
         perror ("munmap failed");
         exit (1);

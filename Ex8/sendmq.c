@@ -8,7 +8,7 @@
 #define QNAME "/my_queue"
 #define PRIORITY 1
 
-char send_data[] = "inan";
+char send_data[] = "mq test";
 
 int main(){
     mqd_t qd;
